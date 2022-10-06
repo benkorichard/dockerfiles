@@ -4,7 +4,7 @@
 
 pushd ${1} >/dev/null
 
-basename ${PWD}
+echo "[$(basename ${PWD})]"
 
 docker build -t benkorichard/$(basename ${PWD}) .
 
