@@ -6,7 +6,7 @@ pushd ${1} >/dev/null
 
 echo "[$(basename ${PWD})]"
 
-docker build -t benkorichard/$(basename ${PWD}) .
+docker build -t $(basename ${PWD}) .
 
 popd >/dev/null
 
