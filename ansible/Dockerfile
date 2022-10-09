@@ -27,4 +27,3 @@ RUN ansible-galaxy collection install \
 COPY config /home/me/.ssh/config
 
 WORKDIR /home/me/ansible
-
