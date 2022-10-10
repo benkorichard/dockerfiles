@@ -4,6 +4,9 @@ RUN apt update && \
     apt upgrade -y && \
     apt install -y ansible
 
+RUN apt install -y \
+    rsync
+
 RUN useradd -m -s /bin/bash me && \
     mkdir -pv /home/me/.ssh/ && \
     chown me:me /home/me/.ssh/
